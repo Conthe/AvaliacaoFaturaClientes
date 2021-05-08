@@ -69,6 +69,7 @@ namespace ValidaCliente
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnVerificar
             // 
@@ -78,6 +79,7 @@ namespace ValidaCliente
             this.btnVerificar.TabIndex = 16;
             this.btnVerificar.Text = "Verificar";
             this.btnVerificar.UseVisualStyleBackColor = true;
+            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // lblSelDiretorio
             // 
@@ -105,6 +107,7 @@ namespace ValidaCliente
             this.btnSelDiretorio.TabIndex = 13;
             this.btnSelDiretorio.Text = "Diretorio...";
             this.btnSelDiretorio.UseVisualStyleBackColor = true;
+            this.btnSelDiretorio.Click += new System.EventHandler(this.btnSelDiretorio_Click);
             // 
             // txtDiretorio
             // 
@@ -136,6 +139,7 @@ namespace ValidaCliente
             this.btnSelecionaArquivo.TabIndex = 9;
             this.btnSelecionaArquivo.Text = "Selecionar..";
             this.btnSelecionaArquivo.UseVisualStyleBackColor = true;
+            this.btnSelecionaArquivo.Click += new System.EventHandler(this.btnSelecionaArquivo_Click);
             // 
             // txtNomeArquivo
             // 

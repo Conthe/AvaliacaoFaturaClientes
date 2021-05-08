@@ -54,7 +54,7 @@ namespace ValidaCliente
             if (id == 2)
                 NomeDoArquivo = DiretorioSaida + @"\ListaEntre6e12Paginas.csv";
             if (id == 3)
-                NomeDoArquivo = DiretorioSaida + @"\ListaAteMaiorQue12Paginas.csv";
+                NomeDoArquivo = DiretorioSaida + @"\ListaMaiorQue12Paginas.csv";
 
             try
             {
