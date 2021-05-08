@@ -33,16 +33,27 @@ namespace ValidaCliente
                 string cabecalho = reader.ReadLine();
                 tempListClientes = new List<Cliente>();
 
-                while ((linha = reader.ReadLine()) != null)
+                try
                 {
-                    Cliente Cliente = new Cliente();
-                    PreencheDadosCliente(linha, Cliente);
-                    bool cepValido = ValidaCEP(Cliente.CEP);
-                    if (cepValido)
+                    while ((linha = reader.ReadLine()) != null)
                     {
-                        tempListClientes.Add(Cliente);
+                        Cliente Cliente = new Cliente();
+                        PreencheDadosCliente(linha, Cliente);
+                        bool cepValido = ValidaCEP(Cliente.CEP);
+                        if (cepValido)
+                        {
+                            tempListClientes.Add(Cliente);
+                        }
                     }
+                }catch(Exception error)
+                {
+                    MessageBox.Show("Estrutura do arquivo inválida!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtNomeArquivo.Text = string.Empty;
+
+
                 }
+
+                
             }
         }
 
